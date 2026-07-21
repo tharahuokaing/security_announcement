@@ -1,46 +1,88 @@
 /* =========================================================
-   Security Announcement Card Styling
+   Official Broadcast Page Stylesheet
 ========================================================= */
-.security-announcement-panel {
-    background: #1e293b;
-    border: 1px solid #38bdf8;
-    border-radius: 12px;
-    padding: 25px;
-    margin-top: 20px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+body {
+    background-color: #0b1120;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.security-announcement-panel h3 {
+.broadcast-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.broadcast-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.broadcast-header h1 {
     color: #38bdf8;
-    margin-top: 0;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
-.announcement-box {
+.broadcast-header p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.announcement-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.announcement-card h2 {
+    font-size: 1.2rem;
+    color: #fbbf24;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.announcement-content {
     background: #0f172a;
     border: 1px solid #334155;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     color: #e2e8f0;
-    font-family: monospace;
-    font-size: 0.95rem;
-    white-space: pre-wrap;
-    margin: 15px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.btn-facebook-share {
+.btn-primary {
     background: #2563eb;
-    color: white;
+    color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 12px;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.2s ease;
 }
 
-.btn-facebook-share:hover {
+.btn-primary:hover {
     background: #1d4ed8;
+}
+
+.feedback-text {
+    text-align: center;
+    color: #34d399;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    height: 20px;
 }
