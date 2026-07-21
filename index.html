@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huokaing Thara - Official Security Broadcast</title>
-    <link rel="stylesheet" href="styles_announcement.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <main class="broadcast-container">
+        <!-- Language Switcher Bar -->
+        <div style="text-align: right; margin-bottom: 15px;">
+            <select id="langSelect" class="lang-selector" onchange="AnnouncementApp.setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="km">ភាសាខ្មែរ</option>
+            </select>
+        </div>
+
         <header class="broadcast-header">
-            <h1>HUOKAING THARA BANKING SYSTEM</h1>
-            <p>Official Public Notice & System Security Broadcast</p>
+            <h1 id="pageTitle">HUOKAING THARA BANKING SYSTEM</h1>
+            <p id="pageSubtitle">Official Public Notice & System Security Broadcast</p>
         </header>
 
         <section class="announcement-card">
-            <h2>🛡️ Official System Security Announcement</h2>
+            <h2 id="cardHeading">🛡️ Official System Security Announcement</h2>
             <div id="announcementText" class="announcement-content">
                 Cybersecurity enforcement layer: $15B core defenses plus $22.4B threat hunting architecture. All routing endpoints are fully safeguarded under official directives approved by Mr. HUO.
             </div>
@@ -27,7 +35,6 @@
         </section>
     </main>
 
-    <!-- Script Integration -->
     <script src="script.js"></script>
 </body>
 </html>
